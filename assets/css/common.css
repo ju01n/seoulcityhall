@@ -1,0 +1,66 @@
+body{
+    font-size: 15px;
+    color: #222;
+    margin: 0 auto;
+    line-height: -0.05em;
+    font-family: "Nanum Gothic","Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+.inner{
+    width: 1152px;
+    margin: 0 auto;
+}
+/* 텍스트 블라인드 */
+.blind{position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: -1px;}
+
+/* title */
+.title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.35em;
+}
+
+/* sp-image 01*/
+.header-top .top-logo,
+.header-bottom .search-area .btn-submit,
+.board .btn-board-more,
+.sc-new .btn-new-more::after,
+.sc-banner .page-area .btn-area .banner,
+.footer-bottom .cs-area{
+    background-image: url(../images/sp-01.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+}
+/* sp-image 02 */
+.header-bottom .bottom-logo{
+    background-image: url(../images/sp-logo01.png);
+    background-repeat: no-repeat;
+    background-size: 180px;
+}
+/* sp-image 03 */
+.sc-visual-news .main-news::before,
+.sc-visual-part .main-part::before{
+    background-image: url(../images/sp-02.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+}
+
+/* sp-image 04 */
+.sc-service .ser::before{
+    background-image: url(../images/sp-03.png);
+    background-repeat: no-repeat;
+    background-size: 1200px;
+}
+/* sp-image 05 (sc-sns) */
+.sc-sns-area .title::after,
+.sc-sns-area .sns-icon .ic{
+    background-image: url(../images/sp-ic-sns.png);
+    background-repeat: no-repeat;
+    background-size: 280px;
+}
+
+/* sp-image 06 - footer sns */
+.footer-top .footer-sns .ft{
+    background-image: url(../images/sp-footer-sns.png);
+    background-repeat: no-repeat;
+    background-size: 175px;
+}
