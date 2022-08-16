@@ -1,20 +1,23 @@
 @import './reset.css';
 @import './common.css';
 
+/* skip-nav */
+#skip{display: none;}
 /* header */
 .header-top{
     position: relative;
-}
-.header-top .header-wrap{
     display: flex;
+    line-height: 48px;
+    font-weight: 700;
 }
-.header-top .header-wrap .menu-area{
+.header-top .menu-area{
     display: flex;
     width: 1051px;
     justify-content: space-between;
+    letter-spacing: -0.05em;
 }
 
-.header-top .top-logo{
+.header-top .logo{
     width: 117px;
     height: 27px;
     margin-top: 8px;
@@ -31,31 +34,23 @@
 }
 .header-top .gnb-area .gnb .gnb-item{
     font-size: 16px;
-    height: 48px;
-    line-height: 48px;
-    font-weight: 700;
     margin-left: 20px;
 }
 .header-top .gnb-area .gnb .gnb-item:hover{
     color: #2292e9;
 }
-.header-top .top-box{
-    display: flex;
-}
-.header-top .top-box .top-menu{
+.header-top .util-area .top-menu{
     display: flex;
     font-size: 14px;
-    height: 48px;
-    line-height: 48px;
-    font-weight: 700;
+    justify-content: flex-end;
 }
-.header-top .top-box .top-menu .top-menu-item{
+.header-top .util-area .top-menu .top-menu-item{
     padding: 0 10px;
 }
-.header-top .top-box .top-menu .top-menu-item:hover{
+.header-top .util-area .top-menu .top-menu-item:hover{
     color: #2292e9;
 }
-.header-top .lang-box{
+.header-top .lang-area{
     width: 110px;
     height: 21px;
     padding: auto;
@@ -64,8 +59,9 @@
     display: flex;
     position: absolute;
     font-size: 12px;
+    z-index: 10;
 }
-.header-top .lang-box select{
+.header-top .lang-area select{
     border-color: #afcfea;
     color: #1E6CB3;
     font-size: 12px;
@@ -76,7 +72,7 @@
     width: 80px;
     height: 21px;
 }
-.header-top .lang-box .btn-lang{
+.header-top .lang-area .btn-lang{
     width: 30px;
     font-size: 11px;
     color: #fff;
@@ -85,13 +81,12 @@
     height: 21px;
     padding: 0;
 }
-.header-bottom{}
-.header-bottom .bottom-wrap{
-   display: flex;
-   justify-content: space-between;
-   position: relative;
+.header-bottom{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
-.header-bottom .bottom-logo{
+.header-bottom .slogan{
     width: 178px;
     height: 51px;
     background-position: 0 0;
@@ -111,18 +106,20 @@
     margin-left: -245px;
     margin-top: 0;
     box-sizing: border-box;
-}
-.header-bottom .search-area .search{
     line-height: 38px;
     padding: 0 10px;
-    color:#2292e9;
     display: flex;
     font-size: 14px;
 }
 .header-bottom .search-area .input-text{
     background: transparent;
     border: 0;
-    height: 38px
+    height: 38px;
+    color: #767676;
+}
+
+.header-bottom .search-area .input-text::placeholder{
+    color: #2292e9;
 }
 .header-bottom .search-area .keyboard{
     background: url(../images/search-keyboard.png) no-repeat;
@@ -132,6 +129,8 @@
     right: 42px;
     top: 12px;
     display: inline-block;
+    border-style: none;
+    cursor: pointer;
 }
 .header-bottom .search-area .btn-submit{
     width: 36px;
@@ -143,30 +142,25 @@
     position: absolute;
     right: 0;
     top: 0;
+    cursor: pointer;
 }
 .header-bottom .wheather-area{
-    margin-top: 34px;
-    display: flex;
-}
-.header-bottom .wheather-area::before{
-    content: '';
-    background: url(../images/ic-wheader.png) no-repeat;
-    width: 58px;
-    height: 47px;
-    vertical-align: top;
-    display: inline-block;
+    margin: 40px 80px 0 0;
 }
 .header-bottom .wheather-area .wheather-top{
     margin-bottom: 7px;
+    text-align: left;
 }
 .header-bottom .wheather-area .degree{
     font-size: 25px;
     margin-right: 5px;
     font-weight: bold;
+    display: inline-block;
 }
 .header-bottom .wheather-area .dust{
     font-size: 13px;
     letter-spacing: -1px;
+
 }
 
 
@@ -235,8 +229,20 @@
 .footer-top .footer-sns .ft.facebook{
     background-position: -25px 0;
 }
+.footer-top .footer-sns .ft.facebook:hover{
+    background-position: -25px -25px
+}
 .footer-top .footer-sns .ft.twitter{
     background-position: -50px 0;
+}
+.footer-top .footer-sns .ft.twitter:hover{
+    background-position: -50px -25px;
+}
+.footer-top .footer-sns .ft.insta{
+    background-position: -75px 0;
+}
+.footer-top .footer-sns .ft.insta:hover{
+    background-position: -75px -25px;
 }
 .footer-top .footer-sns .ft.insta{
     background-position: -75px 0;
@@ -244,11 +250,20 @@
 .footer-top .footer-sns .ft.kakao{
     background-position: -100px 0;
 }
+.footer-top .footer-sns .ft.kakao:hover{
+    background-position: -100px -25px;
+}
 .footer-top .footer-sns .ft.youtube{
     background-position: -125px 0;
 }
+.footer-top .footer-sns .ft.youtube:hover{
+    background-position: -125px -25px;
+}
 .footer-top .footer-sns .ft.blog{
     background-position: -150px 0;
+}
+.footer-top .footer-sns .ft.blog:hover{
+    background-position: -150px -25px;
 }
 
 .footer-bottom{
@@ -286,4 +301,12 @@
 }
 .footer-bottom .site-mark img{
     vertical-align: top;
+}
+
+.btn-top{
+    width: 34px;
+    height: 34px;
+    background-image: url(../images/btn-top.png) no-repeat;
+    position: absolute;
+    bottom: 98px;
 }
