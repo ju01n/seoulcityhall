@@ -142,7 +142,7 @@ $(function(){
 
 
     
-        /**
+/**
  * 관련사이트
  * @version 1.0.0
  * @since 2022-08-15
@@ -175,5 +175,21 @@ $(function(){
         $('.btn-related').removeClass('active')}
       })
     
-    });
+
+//btn-top
+    $('.btn-top').click(function(){
+      $('html, body').animate({scrollTop:0},300);
+      return false;
+  });
+
+
+
+
+
+
+
+
+
+
+    });//지우면안됨
 

@@ -177,6 +177,7 @@ left: 50px;
 
 /* footer */
 .footer {
+  position: relative;
   width: 1152px;
   margin: 0 auto;
   font-size: 12px;
@@ -314,9 +315,12 @@ left: 50px;
 }
 
 .btn-top {
+  position: absolute;
   width: 34px;
   height: 34px;
-  background-image: url(../images/btn-top.png) no-repeat;
-  position: absolute;
+  background: url(../images/btn-top.png) no-repeat;
   bottom: 98px;
+  right: -55px;
+  z-index: 100;
+  cursor: pointer;
 }
