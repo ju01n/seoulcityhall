@@ -2,18 +2,15 @@
     display: flex;
     justify-content: space-between;
 }
-
 .sc-visual {
     position: relative;
     margin-left: 80px;
 }
-
 .sc-visual .content {
     position: absolute;
     width: 690px;
     height: 350px;
 }
-
 .sc-visual .tab-nav {
     position: absolute;
     left: -80px;
@@ -28,7 +25,6 @@
     box-sizing: border-box;
     cursor: pointer;
 }
-
 .sc-visual .tab-nav a::before {
     display: block;
     width: 50px;
@@ -43,7 +39,7 @@
 .sc-visual .content .img-caption {
     position: absolute;
     left: 0;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
     height: 40px;
     line-height: 40px;
@@ -124,7 +120,7 @@
 
 .sc-visual .btn-controller .btn-nav.prev {
     background-position: -241px -285px;
-    right: 40px
+    right: 40px;
 }
 
 .sc-visual .btn-controller .btn-nav.autoplay {
@@ -141,10 +137,8 @@
     right: 1px;
 }
 
-
-
 .sc-covid-curr {
-    background: url(../images/bg-covid.jpg) no-repeat;
+    background: url("../images/bg-covid.jpg") no-repeat;
     width: 360px;
     height: 98px;
     position: relative;
@@ -206,7 +200,7 @@
     top: 37px;
     width: 110px;
     height: 58px;
-    left: 230px
+    left: 230px;
 }
 
 .sc-mayor {
@@ -241,7 +235,6 @@
 .sc-mayor .mayor.right {
     left: 237px;
 }
-
 
 .sc-service .service-area {
     position: relative;
@@ -336,7 +329,7 @@
     top: 50px;
     padding-left: 13px;
     line-height: 28px;
-    background: url(../images/ic-more-service.png) no-repeat right 13px top 50%;
+    background: url("../images/ic-more-service.png") no-repeat right 13px top 50%;
 }
 
 .sc-center {
@@ -362,14 +355,13 @@
 }
 
 .sc-center .covid-list .covid-item:first-child {
-    border-left: 0px;
+    border-left: 0;
 }
-
 
 .group-flex2 {
     display: flex;
     border-bottom: 2px solid #222222;
-    padding: 50px 0 50px 0;
+    padding: 50px 0;
     margin: 0 auto;
 }
 
@@ -386,7 +378,7 @@
 }
 
 .sc-board .board-list .board-item {
-    padding: 6px 0 6px 0;
+    padding: 6px 0;
     position: relative;
     width: 100%;
     white-space: nowrap;
@@ -507,44 +499,44 @@
 }
 
 .sc-information .info-list .info.house::before {
-    background: url(../images/ic-house.png) no-repeat;
+    background: url("../images/ic-house.png") no-repeat;
 }
 
 .sc-information .info-list .info.economy::before {
-    background: url(../images/ic-economy.png) no-repeat;
+    background: url("../images/ic-economy.png") no-repeat;
 }
 
 .sc-information .info-list .info.traffic::before {
-    background: url(../images/ic-traffic.png) no-repeat;
+    background: url("../images/ic-traffic.png") no-repeat;
 }
 
 .sc-information .info-list .info.enviro::before {
-    background: url(../images/ic-enviro.png) no-repeat;
+    background: url("../images/ic-enviro.png") no-repeat;
 }
 
 .sc-information .info-list .info.welfare::before {
-    background: url(../images/ic-welfare.png) no-repeat;
+    background: url("../images/ic-welfare.png") no-repeat;
 }
 
 .sc-information .info-list .info.safe::before {
-    background: url(../images/ic-safe.png) no-repeat;
+    background: url("../images/ic-safe.png") no-repeat;
 }
 
 .sc-information .info-list .info.culture::before {
-    background: url(../images/ic-culture.png) no-repeat;
+    background: url("../images/ic-culture.png") no-repeat;
 }
 
 .sc-information .info-list .info.admin::before {
-    background: url(../images/ic-admin.png) no-repeat;
+    background: url("../images/ic-admin.png") no-repeat;
 }
 
 .sc-new {
-    padding: 20px 0 30px 0;
+    padding: 20px 0 30px;
     position: relative;
 }
 
 .sc-new .title {
-    padding: 0 0 20px 0;
+    padding: 0 0 20px;
 }
 
 .sc-new .new-list {
@@ -594,7 +586,6 @@
     width: 100%;
 }
 
-
 .sc-new .new-item .desc {
     font-size: 16px;
     width: 100%;
@@ -626,7 +617,6 @@
     transform: scale(1.1);
 }
 
-
 .sc-new .btn-new-more {
     color: #7d7d7d;
     font-size: 15px;
@@ -648,7 +638,7 @@
 .group-flex03 {
     display: flex;
     border-bottom: 2px solid #222222;
-    padding: 20px 0 30px 0;
+    padding: 20px 0 30px;
 }
 
 .sc-media {
@@ -676,11 +666,11 @@
     max-width: 280px;
     overflow: hidden;
 }
-.sc-media .video-area .video-box img{
+.sc-media .video-area .video-box img {
     transform: scale(1.0);
     transition: transform 0.3s ease-in-out;
 }
-.sc-media .video-area .video-box img:hover{
+.sc-media .video-area .video-box img:hover {
     transform: scale(1.1);
 
 }
@@ -697,7 +687,7 @@
     background-color: rgba(0, 0, 0, .5);
     padding: 11px 20px;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     left: 0;
     box-sizing: border-box;
     width: 280px;
@@ -733,7 +723,7 @@
     width: 350px;
     height: 195px;
     margin-left: 22px;
-    background: url(../images/sns-area.jpg) no-repeat;
+    background: url("../images/sns-area.jpg") no-repeat;
     display: block;
     padding: 10px 15px;
 }
@@ -801,7 +791,7 @@
 }
 
 .sc-banner {
-    padding: 50px 0 50px 0;
+    padding: 50px 0;
 }
 
 .sc-banner .btn-controller {
@@ -883,14 +873,14 @@
     content: '';
     position: absolute;
     top: 8px;
-    right: 0px;
+    right: 0;
     height: 7px;
     width: 7px;
     border-style: solid;
     border-color: #373737;
-    border-width: 0px 2px 2px 0px;
+    border-width: 0 2px 2px 0;
     transform: rotate(-135deg);
-    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     transform-origin: center center;
 }
 

@@ -177,6 +177,24 @@ $(function(){
     
 
 //btn-top
+let lastScroll = 0;
+	//스크롤 위치 값 = 0 
+    $(window).scroll(function(){
+			//윈도우 창을 스크롤 했을 때
+        current = $(this).scrollTop();
+					//현재 스크롤 위치 값 
+
+        if(current > lastScroll){
+					//현재 위치가 0보다 크면 (스크롤 내리면)
+            $('.btn-top').addClass('active');
+							//btn-top에 active클래스를 추가 (화면에 나타나게)
+        }else{
+				//현재 위치가 0보다 작으면 (스크롤 끝까지 올림)
+            $('.btn-top').removeClass('active');
+							//btn-top에 active클래스 제거 (화면에서 안보이게)
+        }
+    });
+
     $('.btn-top').click(function(){
       $('html, body').animate({scrollTop:0},300);
       return false;
