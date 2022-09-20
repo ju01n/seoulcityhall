@@ -1,3 +1,4 @@
+
 .group-flex1 {
     display: flex;
     justify-content: space-between;
@@ -202,6 +203,7 @@
     height: 58px;
     left: 230px;
 }
+.sc-vision a{display: block; height: 100%;}
 
 .sc-mayor {
     width: 360px;
@@ -222,6 +224,7 @@
     position: relative;
     width: 360px;
     height: 130px;
+    display: block;
 }
 
 .sc-mayor .mayor {

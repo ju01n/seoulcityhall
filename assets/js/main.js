@@ -165,14 +165,16 @@ $(function(){
 
 
       $('.sub-list li:first-child a').keydown(function(e){
-        if(e-keyCode === 9 && e.shiftKey){
+        if(e.keyCode === 9 && e.shiftKey){
           $('.sub-list').slideUp();
+          $('.btn-related').removeClass('active')
         }
       })
       $('.sub-list li:last-child a').keydown(function(e){
         if(e.keyCode === 9 && !e.shiftKey){
-          $('sub-list').slideUp();
-        $('.btn-related').removeClass('active')}
+          $('.sub-list').slideUp();
+          $('.btn-related').removeClass('active')
+      }
       })
     
 
