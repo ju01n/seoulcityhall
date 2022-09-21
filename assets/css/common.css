@@ -4,7 +4,7 @@
 body{ font-size: 15px; color: #222; 
     margin: 0 auto; letter-spacing: -0.05em; 
     font-family: 'Noto Sans KR', sans-serif; 
-max-width: 100%;}
+min-width: 100%;}
 .inner{ width: 1152px; margin: 0 auto; }
 /* 텍스트 블라인드 */
 .blind{position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: -1px;}
